@@ -1,0 +1,259 @@
+/* fonte importada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+fonte baixada do site Dafont, utilizei o font-face para poder definir a url, nome da fonte e tamanhos.
+poderão ser chamadas durante o código somente pelo nome definido.
+*/
+@font-face {
+    font-family: "Arsenica";
+    src: url(/fonts/ArsenicaTrial-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Arsenica";
+    src: url(/fonts/ArsenicaTrial-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Arsenica";
+    src: url(/fonts/ArsenicaTrial-Bold.ttf);
+    font-weight: 700;
+}
+
+/*
+Abaixo, algumas configurações prévias para todos os elementos.
+Box sizing para definir o modelo da caixa.
+Padding e Margin zerados.
+textos sem nenhum estilo.
+fonte aplicada nos elementos de texto.
+*/
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat";
+}
+
+/*Remove a scrollbar*/
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER */
+
+/*Elemento Body do tamanho da tela inteira*/
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Cabeçalho com 100% de largura do body e altura automática.*/
+header {
+    width: 100%;
+    height: auto;
+}
+
+/*
+Elemento pai dos elementos no header
+Alinha a logo, a lista de navegação e o botão agendar
+Defini flexbox pra poder alinhar os 3 elementos.
+Elementos centralizados e com espaçamento.
+*/
+nav {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0px;
+    flex-wrap: wrap;
+}
+
+/*Alinha e espaça os filhos da ul (li)*/
+nav ul {
+    display: flex;
+    gap: 5rem;
+    cursor: pointer;
+}
+
+/*Estiliza todos os links dentro da lista de navegação*/
+nav ul li a {
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*Muda a cor dos links quando passamos o mouse por cima da palavra*/
+nav ul li a:hover {
+    color: #f1aa7ed5;
+    text-decoration: underline;
+}
+
+/*Define o tamanho do elemento pai (figure) da imagem*/
+.agendar {
+    width: 25rem;
+    cursor: pointer;
+}
+
+/*tamanho da imagem em 100% do tamanho do pai (figure)*/
+.agendar img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+/*Define a cor e espaçamento interno do rodapé*/
+footer {
+    background-color: #ebebec;
+    padding: 4rem 20rem 1rem;
+}
+
+/*Div com class footer, é pai dos elementos do rodapé*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Elemento de direitos reservados*/
+footer .direitos {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2rem 0px 0px 4rem;
+}
+
+/*Daqui pra baixo, cada trecho de código modifica uma das 3 colunas do rodapé*/
+
+/*Primeira Coluna*/
+
+/*tamanho do logo*/
+.logoFooter {
+    margin-bottom: 3rem;
+}
+
+/*elementos de informação, endereço, telefone e email
+alinha as imagens com as palavras
+cria um espaçamento entre eles*/
+.informacao {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*as 3 seleções abaixo se referem aos ícones do trecho de informações e aos textos que ficam do lado*/
+.informacao figure {
+    height: 3rem;
+    width: 2.5rem;
+}
+.informacao figure img {
+    width: 100%;
+    height: 100%;
+}
+.informacao p {
+    font-size: 1.6rem;
+    width: 30rem;
+}
+
+/*Os dois trechos abaixo se referem aos ícones de redes sociais, fazendo um alinhamento e espaçando os mesmos*/
+.redesSociais {
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+.redesSociais figure {
+    cursor: pointer; /*muda o cursor quando passado em cima*/
+}
+
+/*Segunda Coluna*/
+
+/*2 seleções utilizando o mesmo código.
+muda a fonte, o tamanho da fonte e o alinhamento do texto*/
+.segundaColuna h2,
+.terceiraColuna h2 {
+    font-family: "Arsenica";
+    font-size: 3rem;
+    margin: 4rem 0px 4rem;
+    text-align: center;
+}
+
+/*Modifica o texto p, e cria um tamanho fixo.*/
+.segundaColuna p {
+    font-size: 1.6rem;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/*Alinha os input e botão do formulário como coluna*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*Modifica os inputs do form. Colocando borda, espaçamento interno e cor.*/
+form input,
+form textarea {
+    background-color: #ebebec;
+    border: 1px solid #f1aa7e;
+    font-size: 1.4rem;
+    padding: 1.4rem .3rem;
+}
+
+/*Define a altura do input*/
+form input {
+    height: 2.5rem;
+}
+
+/*Define a altura e o espaçamento do textarea*/
+form textarea {
+    height: 10rem;
+    padding: .5rem .3rem;
+}
+
+/*Define o layout do botão, com borda, cor, tamanho, borda arredondada, alinhamento etc.*/
+form button {
+    background-color: #f1aa7e;
+    border: none;
+    font-size: 1.4rem;
+    padding: .6rem 0px;
+    border-radius: .5rem;
+    width: 10rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*Terceira Coluna*/
+
+/*Define o tamanho da tabela e uma borda na lateral esquerda*/
+table {
+    width: 30rem;
+    border-left: 4px solid #f1aa7e;
+}
+
+/*Aumenta o tamanho e o alinhamento dos títulos da tabela*/
+table thead th {
+    font-size: 1.6rem;
+    text-align: start;
+}
+
+/*Aumenta o tamanho da fonte na tabela*/
+table tbody td {
+    font-size: 1.4rem;
+}
+
+/*Alinha a primeira coluna à esquerda*/
+.esquerda {
+    text-align: end;
+}
+
+/*Botão abaixo da tabela*/
+.terceiraColuna figure {
+    text-align: center;
+    margin-top: 4rem;
+    cursor: pointer;
+}

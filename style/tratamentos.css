@@ -1,0 +1,44 @@
+/*Neste arquivo a estilização é aplicada somente para o elemento MAIN do arquivo SOBRE.HTML*/
+
+/*espaçamento externo do elemento main*/
+main {
+  margin-top: 5rem;
+}
+
+/*container de todos os elementos da seção principal*/
+/*largura em % e espaçamento externo*/
+.tratamentosDescricao {
+  width: 80%;
+  margin: 8rem auto 6rem;
+}
+
+/*Estilo para cada tópico de tratamento, com imagem e texto*/
+/*Alinhados em linha, com tamanho definido em %, bordas fina e arredondada, alinhamento interno e espaçamento externo, além da cor de fundo*/
+.tratamentoTopico {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 5rem;
+  background-color: #ebebec9d;
+}
+
+/*tamanho da imagem que fica à esquerda de cada tópico*/
+.tratamentoTopico figure {
+  width: 10%;
+  height: 15rem;
+}
+/*Tamanho da imagem em si, que ocupa 100% do elemento pai e é arredondada.*/
+.tratamentoTopico figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+/*Texto de cada tópico, ocupando um pouco menos que o total de espaço disponível e com tamanho de fonte definido.*/
+.tratamentoTopico p {
+  width: 80%;
+  font-size: 1.8rem;
+}

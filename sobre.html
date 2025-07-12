@@ -1,0 +1,198 @@
+<!--COMENTÁRIOS SOBRE O HEADER E O FOOTER ESTÃO NO ARQUIVO INDEX.HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE - Sobre</title>
+    <!--Links dos arquivos CSS aplicados nesta página-->
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/principal.css">
+    <link rel="stylesheet" href="style/sobre.css">
+</head>
+<body>
+    <!-- HEADER, NAV, MAIN, SECTION, FOOTER - Estas serão tags semânticas que utilizei no código, para melhor organzização e SEO-->
+    <header>
+        <!-- Esta será a barra de navegação que possuirá links para as outras páginas, também o logo e um botão de chamada para agendar. -->
+        <nav> 
+            <figure class="logo">
+                <img src="img/logo.svg" alt="Logo da ae clinic">
+            </figure>
+            <!--Lista de navegação do cabeçalho-->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="tratamentos.html">Tratamentos</a></li>
+                <li><a href="index.html#resultados">Resultados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <figure class="agendar">
+                <a href="https://w.app/izepr0">
+                    <img src="img/agendeseuhorario.svg" alt="Botão para agendar o horário">
+                </a>
+            </figure>
+        </nav>
+    </header>
+    <main>
+        <!--Título da página com 2 imagens de setas dos lados-->
+        <div class="frase">
+            <img src="/img/setaparadireita.svg" alt="">
+            <p>
+                Porque escolher a nossa Clínica de Estética?
+            </p>
+            <img src="/img/setaparaesquerda.svg" alt="">
+        </div>
+        <!--Texto explicativo-->
+        <p class="textoSobre">
+            Há 8 anos trazendo os melhores resultados na área da estética avançada em Gravataí, com o melhor custo benefício, excelente qualidade de atendimento e preço justo em tratamentos estéticos faciais. A <strong>ae Clinic</strong> é um lugar muito aconchegante e extremamente agradável, onde você encontra todos os tratamentos na área de estética, com profissionais capacitados e muito bem treinados.
+        </p>
+        <!--Container do conteúdo principal na página-->
+        <div class="conjuntoSobre">
+            <!--Conjunto de imagem com texto embaixo-->
+            <div class="moduloSobre">
+                <figure>
+                    <img src="img/avancada.svg">
+                </figure>
+                <h3>Estética Avançada</h3>
+                <p>
+                    Conciliamos os mais avançados tratamentos de estética e saúde.
+                </p>
+            </div>
+            <!--Conjunto de imagem com texto embaixo-->
+            <div class="moduloSobre">
+                <figure>
+                    <img src="img/atendimento.svg">
+                </figure>
+                <h3>Atendimento Personalizado</h3>
+                <p>
+                    Avaliação individual focando atingir o objetivo de cada pessoa.
+                </p>
+            </div>
+            <!--Conjunto de imagem com texto embaixo-->
+            <div class="moduloSobre">
+                <figure>
+                    <img src="img/infraestrutura.svg">
+                </figure>
+                <h3>Infraestrutura Completa</h3>
+                <p>
+                    Infraestrutura completa e moderna com tecnologia de ponta.
+                </p>
+            </div>
+            <!--Conjunto de imagem com texto embaixo-->
+            <div class="moduloSobre">
+                <figure>
+                    <img src="img/equipe.svg">
+                </figure>
+                <h3>Equipe Qualificada</h3>
+                <p>
+                    Profissionais preparados para realização dos procedimentos estéticos.
+                </p>
+            </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="primeira coluna">
+                <figure class="logoFooter">
+                    <img src="img/logo.svg">
+                </figure>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/mapa.svg">
+                    </figure>
+                    <p>
+                        R. Men de Sá, 800 - Bom Sucesso, Gravataí - RS, 94135-300
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/telefone.svg">
+                    </figure>
+                    <p>
+                        (51) 9 9481-1668
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/email.svg">
+                    </figure>
+                    <p>
+                        ae@clinic.com
+                    </p>
+                </div>
+                <div class="redesSociais">
+                    <figure>
+                        <img src="img/instagram.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/facebook.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/tiktok.svg">
+                    </figure>
+                </div>
+            </div>
+            <div class="segundaColuna">
+                <h2>
+                    Contacte-nos
+                </h2>
+                <p>
+                    Envie sua mensagem e lhe retornaremos o mais breve possível
+                </p>
+                <form>
+                    <input type="email" placeholder="Preencha com seu e-mail">
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+            <div class="terceiraColuna">
+                <h2>Atendimento</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia da semana</th>
+                            <th class="esquerda">Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Domingo</td>
+                            <td class="esquerda">Fechado</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td class="esquerda">09:00 às 17:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figure>
+                        <img src="img/agendar.svg" class="imagemfooter">
+                </figure>
+            </div>
+        </div>
+        <p class="direitos">© 2025 por AE clinic. Todos os direitos reservados</p>
+    </footer>
+    <script src="js/eventos-index.js"></script>
+</body>
+</html>

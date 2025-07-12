@@ -1,0 +1,191 @@
+<!--COMENTÁRIOS SOBRE O HEADER E O FOOTER ESTÃO NO ARQUIVO INDEX.HTML-->
+<!--No Footer há uma alteração - retirado o form e adicionado a logo com um tamanho muito maior-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AE - Contato</title>
+  <link rel="stylesheet" href="style/geral.css">
+  <link rel="stylesheet" href="style/contato.css">
+  <link rel="stylesheet" href="style/principal.css">
+</head>
+<body>
+    <!-- HEADER, NAV, MAIN, SECTION, FOOTER - Estas serão tags semânticas que utilizei no código, para melhor organzização e SEO-->
+    <header>
+        <!-- Esta será a barra de navegação que possuirá links para as outras páginas, também o logo e um botão de chamada para agendar. -->
+        <nav> 
+            <figure class="logo">
+                <img src="img/logo.svg" alt="Logo da ae clinic">
+            </figure>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="tratamentos.html">Tratamentos</a></li>
+                <li><a href="index.html#resultados">Resultados</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <figure class="agendar">
+              <a href="https://w.app/izepr0">
+                  <img src="img/agendeseuhorario.svg" alt="Botão para agendar o horário">
+              </a>
+          </figure>
+        </nav>
+    </header>
+    <main>
+      <!--Container com o formulário e título-->
+      <div class="frase">
+        <img src="/img/setaparadireita.svg" alt="">
+        <p>
+          Contacte-nos
+        </p>
+        <img src="/img/setaparaesquerda.svg" alt="">
+      </div>
+
+      <form id="form">
+        <!--Primeira coluna do formulário, com inputs de NOME, E-MAIL, CELULAR, SELECT E DATALIST-->
+        <div id="coluna1">
+          <div>
+            <label for="nome">Nome Completo*</label>
+            <input type="text" name="nome" id="nome" required>
+          </div>
+          <div>
+            <label for="celular">Celular*</label>
+            <input type="number" id="celular" name="celular" required>
+          </div>
+          <div>
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="tratamento">
+              Selecione o Tratamento*
+            </label>
+            <select name="tratamento" id="tratamento" required>
+              <option value="harmonização">Harmonização Facial</option>
+              <option value="limpeza">Limpeza de Pele</option>
+              <option value="preenchimento">Preenchimento Labial</option>
+              <option value="peeling">Peeling Químico</option>
+              <option value="laser">Tratamento à Laser</option>
+            </select>
+          </div>
+          <div>
+            <label for="profissional">Seleciona a Profissional*</label>
+            <input list="profissionais" name="profissionais">
+            <datalist id="profissionais">
+              <option value="Aline"></option>
+              <option value="Daniela"></option>
+              <option value="Juliana"></option>
+            </datalist>
+          </div>
+          <div>
+            <figure>
+              <img src="img/estrelas.svg">
+            </figure>
+          </div>
+        </div>
+        <!--Segunda coluna do formulário, contendo a área para mensagem e o botão de enviar!!-->
+        <div id="coluna2">
+          <label for="mensagem">Escreva sua Mensagem*</label>
+          <textarea name="mensagem" id="mensagem" required></textarea>
+          <button type="submit" class="submitbtn">Enviar</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="primeiraColuna">
+                <div class="informacao">
+                    <figure>
+                        <img src="img/mapa.svg">
+                    </figure>
+                    <p>
+                        R. Men de Sá, 800 - Bom Sucesso, Gravataí - RS, 94135-300
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/telefone.svg">
+                    </figure>
+                    <p>
+                        (51) 9 9481-1668
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/email.svg">
+                    </figure>
+                    <p>
+                        ae@clinic.com
+                    </p>
+                </div>
+                <div class="redesSociais">
+                    <figure>
+                        <img src="img/instagram.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/facebook.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/tiktok.svg">
+                    </figure>
+                </div>
+            </div>
+            <!--Nesta segunda coluna, tirei o pequeno formulário e mantive apenas a logo maior. Não faria sentido ter 2 formulários na mesma página.-->
+            <div class="segundaColuna">
+              <figure>
+                <img src="img/logo.svg" alt="">
+              </figure>
+            </div>
+            <div class="terceiraColuna">
+                <h2>Atendimento</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia da semana</th>
+                            <th class="esquerda">Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Domingo</td>
+                            <td class="esquerda">Fechado</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td class="esquerda">09:00 às 17:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figure>
+                      <img src="img/agendar.svg" class="imagemfooter">
+              </figure>
+            </div>
+        </div>
+        <p class="direitos">© 2025 por AE clinic. Todos os direitos reservados</p>
+    </footer>
+    <script src="js/eventos-index.js"></script>
+    <script src="js/evento-form.js"></script>
+</body>
+</html>

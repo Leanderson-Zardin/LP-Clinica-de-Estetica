@@ -1,0 +1,198 @@
+<!--COMENTÁRIOS SOBRE O HEADER E O FOOTER ESTÃO NO ARQUIVO INDEX.HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE - Tratamentos</title>
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/principal.css">
+    <link rel="stylesheet" href="style/tratamentos.css">
+</head>
+<body>
+    <!-- HEADER, NAV, MAIN, SECTION, FOOTER - Estas serão tags semânticas que utilizei no código, para melhor organzização e SEO-->
+    <header>
+        <!-- Esta será a barra de navegação que possuirá links para as outras páginas, também o logo e um botão de chamada para agendar. -->
+        <nav> 
+            <figure class="logo">
+                <img src="img/logo.svg" alt="Logo da ae clinic">
+            </figure>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Tratamentos</a></li>
+                <li><a href="index.html#resultados">Resultados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <figure class="agendar">
+                <a href="https://w.app/izepr0">
+                    <img src="img/agendeseuhorario.svg" alt="Botão para agendar o horário">
+                </a>
+            </figure>
+        </nav>
+    </header>
+    <main>
+        <!--Título com palavra e 2 imagens de flecha dos lados-->
+        <div class="frase">
+            <img src="/img/setaparadireita.svg" alt="">
+            <p>
+                Tratamentos Faciais
+            </p>
+            <img src="/img/setaparaesquerda.svg" alt="">
+        </div>
+        <!--Container com o conteúdo principal da página-->
+        <div class="tratamentosDescricao">
+            <!--Conjunto de imagem e texto que serão alinhados com CSS-->
+            <div class="tratamentoTopico">
+                <figure>
+                    <img src="/img/harmonizacao.png">
+                </figure>
+                <p>
+                    A Harmonização Facial é um tratamento estético que visa melhorar a simetria e o equilíbrio do rosto, realçando traços naturais e corrigindo assimetrias. Utiliza técnicas avançadas em áreas como nariz, queixo, maçãs do rosto, sulco nasogeniano, testa e lábios, proporcionando uma aparência mais harmoniosa.
+                </p>
+            </div>
+            <!--Conjunto de imagem e texto que serão alinhados com CSS-->
+            <div class="tratamentoTopico">
+                <figure>
+                    <img src="/img/limpeza.png">
+                </figure>
+                <p>
+                    A Limpeza de Pele é um procedimento avançado que limpa profundamente e revitaliza a pele, promovendo um aspecto mais saudável, viçoso e rejuvenescido, de forma eficaz e segura.
+                </p>
+            </div>
+            <!--Conjunto de imagem e texto que serão alinhados com CSS-->
+            <div class="tratamentoTopico">
+                <figure>
+                    <img src="/img/preenchimento.png">
+                </figure>
+                <p>
+                    O Preenchimento Labial é um procedimento estético que realça o contorno e o volume dos lábios, proporcionando um aspecto mais definido, simétrico e hidratado. Com técnicas seguras e modernas, é ideal para quem deseja lábios mais harmoniosos e naturais, valorizando a beleza facial.
+                </p>
+            </div>
+            <!--Conjunto de imagem e texto que serão alinhados com CSS-->
+            <div class="tratamentoTopico">
+                <figure>
+                    <img src="/img/peeling.png">
+                </figure>
+                <p>
+                    O Peeling Químico é um tratamento que utiliza ácidos para promover a descamação controlada da pele, estimulando a renovação celular e melhorando a textura, uniformidade e aparência de manchas, rugas e cicatrizes.
+                </p>
+            </div>
+            <!--Conjunto de imagem e texto que serão alinhados com CSS-->
+            <div class="tratamentoTopico">
+                <figure>
+                    <img src="/img/laser.png">
+                </figure>
+                <p>
+                    O tratamento facial a laser é uma solução moderna e eficaz para quem busca uma pele mais jovem, saudável e uniforme. Com tecnologia avançada, o laser atua nas camadas mais profundas da pele, estimulando o colágeno, suavizando linhas de expressão, reduzindo manchas, cicatrizes de acne e poros dilatados.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="primeira coluna">
+                <figure class="logoFooter">
+                    <img src="img/logo.svg">
+                </figure>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/mapa.svg">
+                    </figure>
+                    <p>
+                        R. Men de Sá, 800 - Bom Sucesso, Gravataí - RS, 94135-300
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/telefone.svg">
+                    </figure>
+                    <p>
+                        (51) 9 9481-1668
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/email.svg">
+                    </figure>
+                    <p>
+                        ae@clinic.com
+                    </p>
+                </div>
+                <div class="redesSociais">
+                    <figure>
+                        <img src="img/instagram.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/facebook.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/tiktok.svg">
+                    </figure>
+                </div>
+            </div>
+            <div class="segundaColuna">
+                <h2>
+                    Contacte-nos
+                </h2>
+                <p>
+                    Envie sua mensagem e lhe retornaremos o mais breve possível
+                </p>
+                <form>
+                    <input type="email" placeholder="Preencha com seu e-mail">
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+            <div class="terceiraColuna">
+                <h2>Atendimento</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia da semana</th>
+                            <th class="esquerda">Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Domingo</td>
+                            <td class="esquerda">Fechado</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-Feira</td>
+                            <td class="esquerda">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td class="esquerda">09:00 às 17:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figure>
+                        <img src="img/agendar.svg" class="imagemfooter">
+                </figure>
+            </div>
+        </div>
+        <p class="direitos">© 2025 por AE clinic. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/eventos-index.js"></script>
+</body>
+</html>

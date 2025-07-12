@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE - Inicial</title>
+    <!--Links dos arquivos CSS aplicados nesta página-->
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/principal.css">
+</head>
+<body>
+    <!-- HEADER, NAV, MAIN, SECTION, FOOTER - Estas serão tags semânticas que utilizei no código, para melhor organzização e SEO-->
+    <header>
+        <!-- Esta será a barra de navegação que possuirá links para as outras páginas, também o logo e um botão de chamada para agendar. -->
+        <nav> 
+            <figure class="logo">
+                <img src="img/logo.svg" alt="Logo da ae clinic">
+            </figure>
+            <ul>
+                <!--Cada li possui um link para outra página-->
+                <li><a href="#">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="tratamentos.html">Tratamentos</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <!--Botão de agendar com um link para o whastapp do IF-->
+            <figure class="agendar">
+                <a href="https://w.app/izepr0">
+                    <img src="img/agendeseuhorario.svg" alt="Botão para agendar o horário">
+                </a>
+            </figure>
+        </nav>
+    </header>
+    <!-- A Seção HEADER e FOOTER serão reutilizados nas outras páginas, Somente esta seção MAIN percente somente à esta página.  -->
+    <main>
+        <!-- Cada faixa de conteúdo no layout foi separado entre seções -->
+
+        <!-- Um vídeo que irá rodar em loop, não tem controles para o usuário interagir -->
+        <section class="video">
+            <div>
+                <video autoplay loop muted>
+                    <source src="video/tratamentofacial.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--Frase abaixo do vídeo, com dois elementos svg em volta do texto-->
+            <div class="frase">
+                <img src="/img/setaparadireita.svg" alt="">
+                <p>
+                    Realce sua beleza natural com tratamentos personalizados
+                </p>
+                <img src="/img/setaparaesquerda.svg" alt="">
+            </div>
+        </section>
+
+        <!--2º Seção - Com mais uma lista não ordenada, assim como texto com a tag p e uma imagem dentro da tag figure-->
+        <section class="tratamentos">
+            <ul class="listaDeTratamentos">
+                <li class="tratamento">Harmonização Facial</li>
+                <li class="tratamento">Peelings Químicos</li>
+                <li class="tratamento">Limpeza de Pele</li>
+                <li class="tratamento">Terapias a Laser</li>
+                <li class="tratamento">Preenchimento Labial</li>
+            </ul>
+            <div>
+                <p>
+                    Venha conhecer nossa clínica e descubra como nossos tratamentos podem realçar sua beleza natural. Agende uma visita e surpreenda-se com os resultados!
+                </p>
+                <figure>
+                    <img src="/img/agendar.svg" alt="botão para agendar horário." class="botaotratamentos">
+                </figure>
+            </div>
+        </section>
+
+        <!--3º Seção - de um lado, uma breve descrição sobre a clinica, do outro uma imagem ilustrativa-->
+        <section class="sobre">
+            <!--Palavra com 2 imagens de seta dos lados = Título da seção-->
+            <div class="frase subtitulo">
+                <img src="/img/setaparadireita.svg" alt="">
+                <p>
+                    Nossa clínica
+                </p>
+                <img src="/img/setaparaesquerda.svg" alt="">
+            </div>
+            <div class="conjuntoImagem">
+                <div class="textos">
+                    <p>
+                        Bem-vindo à nossa clínica de estética, um espaço moderno e acolhedor dedicado ao cuidado de sua pele e bem-estar.
+                    </p>
+                    <p>
+                        Oferecemos tratamentos personalizados, com equipamentos de última geração e profissionais especializados, focados em cuidados faciais e corporais. 
+                    </p>
+                    <p>
+                        Nosso compromisso é proporcionar resultados eficazes e um ambiente relaxante, onde você se sente verdadeiramente cuidado e renovado.
+                    </p>
+                </div>
+                <figure>
+                    <img src="/img/clinica.png" alt="Imagem ilustrativa da clínica">
+                </figure>
+            </div>
+        </section>
+
+        <!--4º Seção - Cria conjuntos de imagens e palavras para demonstrar os servicos-->
+        <section class="servicos">
+            <div class="frase subtitulo">
+                <img src="/img/setaparadireita.svg" alt="">
+                <p>
+                    Serviços
+                </p>
+                <img src="/img/setaparaesquerda.svg" alt="">
+            </div>
+            <!--Cada li desta lista não ordenada é um conjunto imagem + palavra, que é alinhada no css-->
+            <ul>
+                <li>
+                    <figure>
+                        <img src="img/harmonizacao.png" alt="imagem ilustrativa" class="imagemservico">
+                    </figure>
+                    <p>
+                        Harmonização Facial
+                    </p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/limpeza.png" alt="imagem ilustrativa" class="imagemservico">
+                    </figure>
+                    <p>
+                        Limpeza de Pele
+                    </p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/preenchimento.png" alt="imagem ilustrativa" class="imagemservico">
+                    </figure>
+                    <p>
+                        Preenchimento Labial
+                    </p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/peeling.png" alt="imagem ilustrativa" class="imagemservico">
+                    </figure>
+                    <p>
+                        Peeling Químico
+                    </p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/laser.png" alt="imagem ilustrativa" class="imagemservico">
+                    </figure>
+                    <p>
+                        Tratamento a Laser
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!--5º Seção - Descreve a equipe de profissionais da clínica-->
+        <section class="profissionais">
+            <div class="frase subtitulo">
+                <img src="/img/setaparadireita.svg" alt="">
+                <p>
+                    Profissionais
+                </p>
+                <img src="/img/setaparaesquerda.svg" alt="">
+            </div>
+
+            <!--Elemento pai que engloba todo o conteúdo desta seção-->
+            <div class="conjuntoProfissionais">
+                <!--bloco com imagens das profissionais-->
+                <div class="equipe">
+                    <figure>
+                        <img src="img/aline.png" alt="Imagem ilustrativa" id="aline" class="profissional">
+                    </figure>
+                    <figure>
+                        <img src="img/daniela.png" alt="Imagem ilustrativa" id="daniela" class="profissional">
+                    </figure>
+                    <figure>
+                        <img src="img/juliana.png" alt="Imagem ilustrativa" id="juliana" class="profissional">
+                    </figure>
+                </div>
+                <!--Bloco com a descrição da equipe em geral, e posteriormente será possível alterar os textos entre cada integrando. Mas será implementado com Javascript-->
+                <div class="descricaoEquipe">
+                    <div class="nomes">
+                        <p class="infoequipe">Equipe</p>
+                        <p class="infoequipe">Aline</p>
+                        <p class="infoequipe">Daniela</p>
+                        <p class="infoequipe">Juliana</p>
+                    </div>
+                    <div class="textosEquipe">
+                        <p id="texto1">
+                            Nossa equipe de esteticistas profissionais é formada por especialistas graduadas em Estética e Cosmética, com ampla experiência em tratamentos faciais.
+                        </p>
+                        <p id="texto2">
+                            Sempre atualizadas com as últimas técnicas e inovações, oferecem cuidados personalizados utilizando produtos de alta qualidade e equipamentos modernos, visando resultados eficazes e duradouros para cada cliente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--6º Seção - Aqui será mostrado os resultados (antes e depois) de 3 tratamentos diferentes-->
+        <section class="resultados" id="resultados">
+            <div class="frase subtitulo">
+                <img src="/img/setaparadireita.svg" alt="">
+                <p>
+                    Resultados
+                </p>
+                <img src="/img/setaparaesquerda.svg" alt="">
+            </div>
+
+            <!--Elemento pai que engloba todo o conteúdo da seção-->
+            <div class="conjuntoResultados">
+                <!--3 comentários completos, incluindo imagem, título e texto-->
+                <div class="comentarioCompleto">
+                    <!--bloco com 2 imagens, antes e depois-->
+                    <div class="grupoImagem">
+                        <figure class="imagemEsquerda">
+                            <img src="/img/exemplo1.png">
+                        </figure>
+                        <figure class="imagemDireita">
+                            <img src="/img/exemplo1.png">
+                        </figure>
+                    </div>
+                    <!--Este p simula um título (não usei o h1/h2 propositalmente)-->
+                    <p><strong>Rodrigo</strong> - Harmonização Facial
+                    </p>
+                    <!--Texto de descrição-->
+                    <p>
+                        "Fiquei muito feliz com o tratamento que fiz na clínica, o resultado ficou natural e me sinto muito mais confiante agora!"
+                    </p>
+                </div>
+                <div class="comentarioCompleto">
+                    <div class="grupoImagem">
+                        <figure class="imagemEsquerda">
+                            <img src="img/exemplo2.png">
+                        </figure>
+                        <figure class="imagemDireita">
+                            <img src="img/exemplo2.png">
+                        </figure>
+                    </div>
+                    <p><strong>Camila</strong> - Preenchimento Labial
+                    </p>
+                    <p>
+                        “O preenchimento superou minhas expectativas, o atendimento na clínica foi excelente, e agora me sinto mais realizada com meu sorriso.”
+                    </p>
+                </div>
+                <div class="comentarioCompleto">
+                    <div class="grupoImagem odete">
+                        <figure class="imagemEsquerda">
+                            <img src="img/exemplo3.png">
+                        </figure>
+                        <figure class="imagemDireita">
+                            <img src="img/exemplo3.png">
+                        </figure>
+                    </div>
+                    <p><strong>Odete</strong> - Peeling Químico
+                    </p>
+                    <p>
+                        “O peeling fez maravilhas pela minha pele, me sinto mais jovem e radiante após o tratamento na clínica.”
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--7º Seção - Mostra a localização fictícia da clínica-->
+        <section class="mapa">
+            <div class="frase subtitulo">
+                <img src="/img/setaparadireita.svg" alt="">
+                <p>
+                    Venha nos visitar
+                </p>
+                <img src="/img/setaparaesquerda.svg" alt="">
+            </div>
+            <!--Código retirado do próprio google maps e incorporado neste arquivo html.-->
+            <div class="conjuntoVisitar">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.736513487432!2d-51.042023823561244!3d-29.929486825956605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951973642357104f%3A0x20da4ce6fde188a0!2sIFSul%20-%20C%C3%A2mpus%20Gravatai!5e0!3m2!1spt-BR!2sbr!4v1746988433619!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!--Rodapé, replicado nas outras páginas-->
+    <footer>
+        <!--Container do rodapé com o conteúdo-->
+        <div class="footer">
+            <!--O footer foi dividido em 3 colunas, descritas abaixo-->
+
+            <!--1º Coluna - Contém Logo da página, informações de endereço e  -->
+            <div class="primeira coluna">
+                <figure class="logoFooter">
+                    <img src="img/logo.svg">
+                </figure>
+                <!--3 Divs com imagem e parágrafo para serem alinhados em linha no css-->
+                <div class="informacao">
+                    <figure>
+                        <img src="img/mapa.svg">
+                    </figure>
+                    <p>
+                        R. Men de Sá, 800 - Bom Sucesso, Gravataí - RS, 94135-300
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/telefone.svg">
+                    </figure>
+                    <p>
+                        (51) 9 9481-1668
+                    </p>
+                </div>
+                <div class="informacao">
+                    <figure>
+                        <img src="img/email.svg">
+                    </figure>
+                    <p>
+                        ae@clinic.com
+                    </p>
+                </div>
+
+                <!--Bloco de redes sociais para serem alinhados em linha no css-->
+                <div class="redesSociais">
+                    <figure>
+                        <img src="img/instagram.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/facebook.svg">
+                    </figure>
+                    <figure>
+                        <img src="img/tiktok.svg">
+                    </figure>
+                </div>
+            </div>
+
+            <!--2º Coluna - Contendo um textinho e um formulário para enviar uma mensagem-->
+            <div class="segundaColuna">
+                <h2>
+                    Contacte-nos
+                </h2>
+                <p>
+                    Envie sua mensagem e lhe retornaremos o mais breve possível
+                </p>
+                <!--Form contendo apenas 2 input, de e-mail e para escrever a mensagem. Ambos devem ser preenchidos obrigatóriamente-->
+                <form>
+                    <input type="email" placeholder="Preencha com seu e-mail" required>
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+            <!--3º Coluna - Contém uma tabela com os horários de atendimento-->
+            <div class="terceiraColuna">
+                <h2>Atendimento</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia da semana</th>
+                            <th class="esquerda">Horários</th> <!--Class esquerda será utilizada para alinhar somente a primeira coluna da tabela à esquerda.-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Domingo</td>
+                            <td class="esquerda direita">Fechado</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda-Feira</td>
+                            <td class="esquerda direita">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-Feira</td>
+                            <td class="esquerda direita">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-Feira</td>
+                            <td class="esquerda direita">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-Feira</td>
+                            <td class="esquerda direita">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-Feira</td>
+                            <td class="esquerda direita">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td class="esquerda direita">09:00 às 17:00</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <figure>
+                        <img src="img/agendar.svg" class="imagemfooter">
+                </figure>
+            </div>
+        </div>
+        <!--Fora do container footer, está uma mensagem de direitos reservados-->
+        <p class="direitos">© 2025 por AE clinic. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/eventos-index.js"></script>
+    <script src="js/evento-load.js"></script>
+</body>
+</html>

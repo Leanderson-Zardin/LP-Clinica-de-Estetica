@@ -1,0 +1,97 @@
+/*Neste arquivo a estilização é aplicada somente para o elemento MAIN do arquivo CONTATO.HTML*/
+
+/*Dá uma espaçada externa no elemento main*/
+main {
+  margin-top: 4rem;
+}
+
+
+/*Nestes blocos de código, está sendo alterada a estilização das colunas do Footer*/
+/*Removi aquele pequeno formulário e adicionei a logo com um tamanho bem maior*/
+.segundaColuna{
+  margin: 4rem 0px 4rem;
+}
+.primeiraColuna {
+  margin: 6rem 0px 4rem;
+}
+.segundaColuna figure {
+  width: 30rem;
+}
+.segundaColuna figure  img{
+  width: 100%;
+}
+
+/*FORMULARIO*/
+
+/*formulário selecionado com ID, porque através do próprio elemento não deu certo. já há uma estilização para o elemento form no arquivo GERAL.CSS que estava pegando nesta página também.*/
+
+/*O formulário possui 2 colunas, e o display flex alinha as duas linha, adiciona bordas, cor de fundo, espaçamento interno e externo e tamanho fixo*/
+#form {
+  display: flex;
+  flex-direction: row;
+  margin: 7rem auto;
+  border: 1px solid black;
+  border-radius: .8rem;
+  width: 80rem;
+  padding: 2.5rem 2rem;
+  background-color: #ebebecd7;
+}
+
+/*Ambas as colunas do formulário ocupando metade do espaço*/
+#coluna1,
+#coluna2 {
+  width: 50%;
+}
+
+/*Ambas as colunas e mais as divs dentro da primeira coluna estão alinhados em colunas*/
+/*coluna div = Label + input*/
+#coluna1,
+#coluna2,
+#coluna1 div {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Espaçamento entre as divs da primeira coluna*/
+#coluna1{
+  gap: 2rem;
+}
+
+/*espaçamento entre os elementos da coluna 2 e também entre os elementos das divs da coluna 1*/
+#coluna1 div,
+#coluna2 {
+  gap: .5rem;
+}
+
+/*Define a altura da área de texto e alinhamento do texto*/
+#coluna2 textarea {
+  height: 100%;
+  text-align: justify;
+}
+
+/*Define o tamanho da fonte para os inputs*/
+#form label,
+#form input,
+#form select {
+  font-size: 1.6rem;
+}
+
+/*Cor e borda para os inputs*/
+#form input,
+#form textarea {
+  background-color: white;
+  border: 1px solid black;
+}
+
+/*imagem abaixo da primeira coluna*/
+#form figure {
+  align-self: center;
+}
+
+/*Estilos para o botão de enviar do formulário, espaçamento, cor e borda*/
+#form button {
+  color: white;
+  font-weight: bold;
+  border-radius: 4rem;
+  margin-top: 2.5rem;
+}

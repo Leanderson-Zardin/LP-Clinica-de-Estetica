@@ -1,0 +1,345 @@
+/*Neste arquivo CSS, foram aplicadas propriedades para os elementos da página INDEX.HTML*/
+/*Alguns elementos (Ex.: .frase) são aplicados nas demais páginas também*/
+
+/*PRIMEIRA SEÇÃO*/
+
+/*Todas as sections possuem a largura de 100% da tela*/
+section {
+  width: 100vw;
+  /* background-color: blue; */
+}
+
+/*Definindo o tamanho e display do video*/
+.video video {
+  width: 100vw;
+  display: block;
+}
+
+/*Estiliza a frase, alinhando a tag P com as 2 FIGURES.*/
+.frase {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0px;
+}
+/*Estiliza a palavra contida em P*/
+.frase p {
+  font-family: "Arsenica";
+  font-size: 2.5rem;
+}
+
+/*Define o tamanho das imagens das setas*/
+.frase img {
+  width: 30rem;
+}
+
+/*SEGUNDA SEÇÃO*/
+
+/*Mexendo direto no container, alinha os 2 blocos div um do lado do outro, adiciona espaçamento e centraliza tudo no meio da página*/
+.tratamentos {
+  background-color: #ebebec;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0px;
+  align-items: center;
+  gap: 10rem;
+}
+
+/*Elemento ul - altera a estrutura da lista e alinha todos os LI*/
+.listaDeTratamentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border: 1px solid #f1aa7e;
+  padding: 4rem;
+}
+
+/*Define o tamanho de texto do LI*/
+.listaDeTratamentos li {
+  font-size: 2rem;
+}
+
+/*Altera todos os elementos P dentro da class tratamentos, centralizando e aumentando a fonte.*/
+.tratamentos p {
+  font-size: 1.6rem;
+  width: 45rem;
+  text-align: center;
+}
+
+/*Dentro de cada div no container tratamentos, também há um alinhamento em coluna com flexbox*/
+.tratamentos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/*Altera o cursor ao passar o mouse por cima da imagem*/
+.tratamentos div figure {
+  cursor: pointer;
+}
+
+/*TERCEIRA SEÇÃO*/
+
+/*altera a frase título adicionando um espaçamento interno*/
+.subtitulo {
+  padding: 3rem 0px;
+}
+
+/*container da seção*/
+.conjuntoImagem {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*deixa um tamanho para a div dos textos menor que o tamanho da imagem*/
+.conjuntoImagem div {
+  width: 40%;
+}
+
+/*alinha todos os 3 blocos de texto em colunas*/
+.conjuntoImagem .textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 4rem;
+  gap: 5rem;
+}
+
+/*Altera as fontes do texto destes 3 blocos*/
+.conjuntoImagem .textos p {
+  font-size: 2rem;
+  width: 50rem;
+  border: 1px solid #f1aa7e;
+  padding: 1.5rem 1rem;
+}
+
+/*Seleciona o segundo bloco de texto na seção e joga pra direita, intercalando os alinhamentos*/
+.conjuntoImagem .textos p:nth-child(2) {
+  align-self: flex-end;
+  text-align: right;
+}
+
+/*restante do tamanho da tela destinada para a imagem da clínica*/
+.conjuntoImagem figure {
+  height: 60rem;
+  width: 60%;
+}
+
+/*imagem em 100% do tamanho do pai, figure*/
+.conjuntoImagem figure img {
+  height: 100%;
+  width: 100%;
+  display: block; /*display block pra eliminar os espaçamentos extras*/
+}
+
+/*QUARTA SEÇÃO*/
+
+/*.servicos é o container desta seção, cada conjunto de servico é um LI de uma lista não ordenada*/
+.servicos ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  gap: 10rem;
+  margin: 7rem 0px;
+}
+
+/*Altera as imagens da seção de servicos, adicionando tamanhos fixos*/
+.servicos ul li figure {
+  width: 20rem;
+  height: 20rem;
+}
+
+/*Arredonda as imagens da seção e deixa em 100% do tamanho do figure, também adiciona uma borda fina*/
+.servicos ul li figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px solid #f1aa7e;
+  padding: .5rem;
+}
+
+/*Altera os tamanhos dos textos dentro dos conjuntos*/
+.servicos ul li p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*cada conjunto fica dentro do LI, e cada um possui um flexblox para alinhar em colunas.*/
+.servicos ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/*QUINTA SEÇÃO*/
+
+
+/*container da seção*/
+.profissionais {
+  background-color: #ebebec;
+}
+
+/*container contendo somente o conteúdo principal da seção, sem o título*/
+/*Faz um alinhamento de linha, centraliza e adiciona um espaçamento.*/
+.conjuntoProfissionais {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  padding: 0px 0px 4rem;
+}
+
+/*Bloco onde fica as imagens das 3 moças, com uma borda na parte de baixo.*/
+.equipe {
+  display: flex;
+  border-bottom: 3px solid #f1aa7e;
+}
+
+/*Define os tamanhos fixos das imagens*/
+.equipe figure {
+  width: 20rem;
+  height: 30rem;
+}
+
+/*imagens com 100% do tamanho do pai figure, e com display block pra não sobrar espaços vazios*/
+.equipe figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*Seleciona a terceira imagem do bloco e inverte a mesma, para melhorar o visual da seção.*/
+.equipe figure:nth-child(3) img {
+  transform: scaleX(-1);
+}
+
+/*Bloco de texto da seção, adiciona um espaçamento interno que empurra o texto pra baixo*/
+.descricaoEquipe {
+  padding-top: 3.5rem;
+}
+
+/*Alinhamento e espaçamento dos títulos/nomes das profissionais*/
+.descricaoEquipe .nomes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Títulos/nomes dentro de uma lista não ordenada, aplica a estilização para estes títulos*/
+.descricaoEquipe .nomes p {
+  font-size: 2rem;
+  padding: .4rem .6rem;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+/*Primeiro título possui uma cor diferente para destaque*/
+.descricaoEquipe .nomes p:first-child {
+  background-color: #f1aa7e94;
+}
+
+/*Textos da seção, possui espaço de metade do container e espaçamento externo*/
+.textosEquipe {
+  width: 50rem;
+  margin-top: 4rem;
+}
+
+/*Estila a fonte dos textos*/
+.textosEquipe p {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+/*SEXTA SEÇÃO*/
+
+/*Container da seção de resultados*/
+/*Alinha as tres divs como linha e adiciona espaçamento*/
+.conjuntoResultados {
+  margin: 7rem 0px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+/*Cada comentario é uma div com imagens e textos*/
+/*Tamanho fixo, flexbox para alinhar em colunas e overflow para eliminar o resto de imagem que fica transbordando do quadro*/
+.comentarioCompleto {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+/*Cada div de comentário possui 2 imagens com a class .grupoImagem, este código estiliza o bloco pai*/
+.comentarioCompleto .grupoImagem {
+  width: 100%;
+  height: 39rem;
+  display: flex;
+}
+
+/*este código estiliza as 2 imagens ao mesmo tempo**/
+.comentarioCompleto .grupoImagem figure {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /*não deixa o resto da imagem aparecer*/
+}
+
+/*Nestes 2 blocos de código, é adicionado uma borda que irá separar visualmente as 2 imagens do bloco*/
+.comentarioCompleto .grupoImagem figure:nth-child(1) {
+  border-bottom: 4px solid #f1aa7e;
+  border-right: 4px solid #f1aa7e;
+}
+.comentarioCompleto .grupoImagem figure:nth-child(2) {
+  border-bottom: 4px solid #f1aa7e;
+  border-left: 4px solid #f1aa7e;
+}
+
+/*Tamanho fixo para as imagens, posição absoluta em relação ao pai figure*/
+.comentarioCompleto .grupoImagem figure img {
+  height: 100%;
+  position: absolute;
+  display: block;
+}
+
+/*Blocos de código posicionando as imagens, para centralizar melhor na tela. Tudo com valores fixos*/
+.imagemEsquerda img{
+  left: -10px;
+}
+.imagemDireita img{
+  right: -30px;
+}
+.odete .imagemEsquerda img{
+  left: -50px;
+}
+.odete .imagemDireita img{
+  right: -70px;
+}
+
+/*container das imagens alinhadas em linha*/
+.grupoImagem {
+  display: flex;
+}
+
+/*Formatando a fonte dos textos*/
+.comentarioCompleto p,
+.comentarioCompleto strong {
+  font-size: 1.4rem;
+}
+
+/*Definindo a largura dos comentários e centralizando*/
+.comentarioCompleto p {
+  width: 70%;
+  text-align: center;
+}
+
+/*SÉTIMA SEÇÃO*/
+
+/*Fixando o tamanho do Iframe, com o mapa de endereço da clínica*/
+.conjuntoVisitar iframe {
+  width: 100%;
+  height: 40rem;
+  display: block;
+}
